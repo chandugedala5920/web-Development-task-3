@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 3 - Advanced Styling & JavaScript</title>
+  <link rel="stylesheet" href="task3.css" />
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Responsive Box -->
+    <div class>
+      <h2>Hello, I'm Responsive!</h2>
+      
+      <!-- Multi-Step Quiz Section -->
+<div class="quiz">
+  <h3>🧠 Simple Quiz</h3>
+  <div id="quizContainer">
+    <p id="questionText"></p>
+    <div id="answers"></div>
+    <p id="result"></p>
+    <button id="nextBtn" onclick="nextQuestion()" style="display:none;">Next</button>
+  </div>
+</div>
+
+
+    <!-- Joke API Section -->
+    <div class="joke-section">
+      <h3>😂 Get a Random Joke</h3>
+      <button onclick="getJoke()">Tell Me a Joke</button>
+      <p id="joke"></p>
+    </div>
+
+    <!-- Image Carousel Section -->
+<div class="carousel-section">
+  <h3>📷 Image Carousel</h3>
+  <div class="carousel">
+    <img id="carouselImage" src="https://picsum.photos/id/237/600/300" alt="Carousel Image" />
+    <div class="carousel-buttons">
+      <button onclick="prevImage()">⏮️ Prev</button>
+      <button onclick="nextImage()">⏭️ Next</button>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+
+  <script src="task3.js"></script>
+</body>
+</html>
